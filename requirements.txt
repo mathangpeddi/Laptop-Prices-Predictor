@@ -1,0 +1,6 @@
+selenium==3.141.0
+joblib==0.15.1
+numpy==1.18.3
+pandas==1.0.4
+streamlit==0.61.0
+scikit_learn==0.23.1
