@@ -1,5 +1,17 @@
 # Laptop Prices Predictor
+<ul>
+  <li>Designed a web app that predicts the price of the laptop given the configurations. </li>
+  <li>Scraped the laptops data from flipkart.com using python and BeautifulSoup package</li>
+  <li>Developed Linear, Lasso, and Random Forest Regressors using GridsearchCV to get the best model.</li>
+  <li>Deployed the Machine Learning model using streamlit library in Heroku using flask</li>
+</ul>
 
+# Links and Resources Used
+<li>PyCaret Library: <a href="https://pycaret.org/">https://pycaret.org/</a></li>
+<li>Streamlit Library: <a href="https://www.streamlit.io/">https://www.streamlit.io/</a>
+<li>Model Deployment Video: <a href="https://www.youtube.com/watch?v=IWWu9M-aisA">https://www.youtube.com/watch?v=IWWu9M-aisA</a></li>
+<li>Model Deployment Github: <a href="https://github.com/krishnaik06/Dockers">https://github.com/krishnaik06/Dockers</a></li>
+<li>Packages: pandas, numpy, sklearn, flask, streamlit, joblib</li>
 
 # Web Scraping
 
@@ -31,3 +43,19 @@ There are a few columns which are categorical here but they actually contain num
 # Exploratory Data Analysis
 ![](images/processor_type.png)   ![](images/diskdrive.png) <br/>
 ![](images/RAM_GB.png)
+
+# Model Building
+<li>Traditional Method</li>
+Used scikit-learn library for the Machine Learning tasks. Applied label encoding and converted the categorical variables into numerical ones.Then I splited the data into training and test sets with a test size of 20%. I tried three different models ( Linear Regression, Random Forest Regression, XGBoost) and evaluated them using Mean Absolute Error. 
+
+<li>Automated Method</li>
+Used the auto ML library in python called PyCaret. Compared all the regression models and selected the best model for applied hyperparameter tuning and plotted the various curves.
+
+Link to my article: <a href="https://towardsdatascience.com/leverage-the-power-of-pycaret-d5c3da3adb9b">https://towardsdatascience.com/leverage-the-power-of-pycaret-d5c3da3adb9b</a>
+
+# Model Deployment
+I have deployed the model using Streamlit library and flask framework on Heroku which is a Platform As A Service(PAAS)
+![](images/heroku_app.png)
+![](images/heroku_app2.png)
+
+Web application: <a href="https://laptop-prices-predictor.herokuapp.com/">https://laptop-prices-predictor.herokuapp.com/</a>
