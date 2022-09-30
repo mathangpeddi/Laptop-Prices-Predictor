@@ -1,5 +1,5 @@
 selenium==3.141.0
-joblib==0.15.1
+joblib==1.2.0
 numpy==1.18.3
 pandas==1.0.4
 streamlit==0.61.0
